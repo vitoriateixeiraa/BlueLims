@@ -3,9 +3,9 @@ import { SimpleLineIcons } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { AntDesign } from '@expo/vector-icons';
 
-import Chemicals from '../screens/Chemicals';
-import Profile from '../screens/Profile';
-import RegisterChemicals from '../screens/RegisterChemicals';
+import Chemicals from '../screens/app/Chemicals';
+import Profile from '../screens/app/Profile';
+import RegisterChemicals from '../screens/app/RegisterChemicals';
 
 const Tab = createBottomTabNavigator();
 

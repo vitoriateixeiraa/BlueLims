@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 import { Svg, Path } from "react-native-svg";
 
+
 export function Logo() {
   return (
     <View style={styles.container}>
@@ -34,11 +35,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
   description: {
-    fontSize: 34,
-    fontFamily: "Roboto Flex",
+    fontSize: 15,
+    fontFamily: "PT Serif",
     fontStyle: "normal",
-    fontWeight: "700",
-    lineHeight: 41,
+    fontWeight: "400",
+    lineHeight: 40,
     letterSpacing: 0.374,
   },
 });

@@ -13,15 +13,23 @@ export default function SignIn() {
 
 const styles = StyleSheet.create({
   container: {
+    //flex: 1,
+    // backgroundColor: '#fff',
+    // alignItems: 'center',
+    // justifyContent: 'center',
+    
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: 'flex',
+    flexDirection: 'column',
+    width: 390,
+    height: 149,
   },
   title: {
     fontSize: 34,
     fontFamily: 'Roboto',
     fontStyle: 'normal',
     fontWeight: '700',
+    width: 344,
+    height: 41,
   }
 });
