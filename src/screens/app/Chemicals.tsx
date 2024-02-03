@@ -21,7 +21,7 @@ export default function Chemicals() {
         borderRadius={10}
         sx={{
           ":focus": {
-            borderColor: "#355666",
+            borderColor: "#B8D3E0",
           },
         }}
       >

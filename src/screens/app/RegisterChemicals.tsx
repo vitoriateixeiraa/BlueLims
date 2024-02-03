@@ -23,7 +23,6 @@ import { AntDesign } from "@expo/vector-icons";
 import { Icon } from "@gluestack-ui/themed";
 import { SelectBackdrop } from "@gluestack-ui/themed";
 import { SelectItem } from "@gluestack-ui/themed";
-import { ButtonIcon } from "@gluestack-ui/themed";
 
 export default function RegisterChemicals() {
   return (
@@ -38,23 +37,16 @@ export default function RegisterChemicals() {
         isReadOnly={false}
         sx={{
           ":focus": {
-            borderColor: "#355666",
+            borderColor: "#B8D3E0",
           },
         }}
       >
-        <InputSlot>
-          <InputIcon>
-            {
-              <AntDesign
-                name="closecircle"
-                size={16}
-                color="white"
-                justifyContent="flex-end"
-              />
-            }
-          </InputIcon>
-        </InputSlot>
         <InputField placeholder="Nome do Insumo" />
+        <InputSlot margin={10}>
+          <InputIcon>
+            {<AntDesign name="closecircle" size={16} color="white" />}
+          </InputIcon>
+        </InputSlot>
       </Input>
 
       <Input
@@ -66,39 +58,12 @@ export default function RegisterChemicals() {
         isReadOnly={false}
         sx={{
           ":focus": {
-            borderColor: "#355666",
+            borderColor: "#B8D3E0",
           },
         }}
       >
-        <InputSlot>
-          <InputIcon>
-            {
-              <AntDesign
-                name="closecircle"
-                size={16}
-                color="white"
-                justifyContent="flex-end"
-              />
-            }
-          </InputIcon>
-        </InputSlot>
         <InputField placeholder="Observações" />
-      </Input>
-
-      <Input
-        mt={"$4"}
-        variant="underlined"
-        size="md"
-        isDisabled={false}
-        isInvalid={false}
-        isReadOnly={false}
-        sx={{
-          ":focus": {
-            borderColor: "#355666",
-          },
-        }}
-      >
-        <InputSlot>
+        <InputSlot margin={10}>
           <InputIcon>
             {
               <AntDesign
@@ -110,7 +75,34 @@ export default function RegisterChemicals() {
             }
           </InputIcon>
         </InputSlot>
+      </Input>
+
+      <Input
+        mt={"$4"}
+        variant="underlined"
+        size="md"
+        isDisabled={false}
+        isInvalid={false}
+        isReadOnly={false}
+        sx={{
+          ":focus": {
+            borderColor: "#B8D3E0",
+          },
+        }}
+      >
         <InputField placeholder="Quantidade" />
+        <InputSlot margin={10}>
+          <InputIcon>
+            {
+              <AntDesign
+                name="closecircle"
+                size={16}
+                color="white"
+                justifyContent="flex-end"
+              />
+            }
+          </InputIcon>
+        </InputSlot>
       </Input>
 
       <Select mt={"$4"}>
@@ -126,15 +118,10 @@ export default function RegisterChemicals() {
             <SelectDragIndicatorWrapper>
               <SelectDragIndicator />
             </SelectDragIndicatorWrapper>
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
-            <SelectItem
-              label="Lorem Ipsum"
-              value="Lorem Ipsumui"
-              isDisabled={true}
-            />
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
+            <SelectItem label="Reagente" value="Reagente" />
+            <SelectItem label="Equipamento" value="Equipamento" />
+            <SelectItem label="Insumos" value="Insumos" />
+            <SelectItem label="Outros" value="Outros" />
           </SelectContent>
         </SelectPortal>
       </Select>
@@ -157,7 +144,7 @@ export default function RegisterChemicals() {
             <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
             <SelectItem
               label="Lorem Ipsum"
-              value="Lorem Ipsumui"
+              value="Lorem Ipsum"
               isDisabled={true}
             />
             <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
@@ -169,7 +156,7 @@ export default function RegisterChemicals() {
         <SelectTrigger variant="underlined" size="md">
           <SelectInput placeholder="Tipo" />
           <SelectIcon mr="$3">
-            <Icon as={ChevronDownIcon} />
+            <Icon as={ChevronDownIcon} color="" />
           </SelectIcon>
         </SelectTrigger>
         <SelectPortal>
@@ -178,15 +165,13 @@ export default function RegisterChemicals() {
             <SelectDragIndicatorWrapper>
               <SelectDragIndicator />
             </SelectDragIndicatorWrapper>
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
-            <SelectItem
-              label="Lorem Ipsum"
-              value="Lorem Ipsumui"
-              isDisabled={true}
-            />
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
+            <SelectItem label="Hidróxidos" value="Hidróxidos" />
+            <SelectItem label="Solventes" value="Solventes" />
+            <SelectItem label="Indicadores" value="Indicadores" />
+            <SelectItem label="Padrões" value="Padrões" />
+            <SelectItem label="Ácidos" value="Ácidos" />
+            <SelectItem label="Sais" value="Sais" />
+            <SelectItem label="Outros" value="Outros" />
           </SelectContent>
         </SelectPortal>
       </Select>
@@ -204,15 +189,8 @@ export default function RegisterChemicals() {
             <SelectDragIndicatorWrapper>
               <SelectDragIndicator />
             </SelectDragIndicatorWrapper>
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
-            <SelectItem
-              label="Lorem Ipsum"
-              value="Lorem Ipsumui"
-              isDisabled={true}
-            />
-            <SelectItem label="Lorem Ipsum" value="Lorem Ipsum" />
+            <SelectItem label="Ativo" value="Ativo" />
+            <SelectItem label="Em falta" value="Em falta" />
           </SelectContent>
         </SelectPortal>
       </Select>
@@ -226,7 +204,7 @@ export default function RegisterChemicals() {
         isDisabled={false}
         isFocusVisible={false}
         borderRadius={14}
-        bgColor="#355666"
+        bgColor="#B8D3E0"
       >
         <ButtonText>CADASTRAR</ButtonText>
       </Button>
