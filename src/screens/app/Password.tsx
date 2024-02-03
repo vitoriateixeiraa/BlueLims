@@ -42,12 +42,10 @@ export default function Password() {
         isRequired={false}
       >
         <FormControlLabel mb="$1">
-        <FormControlLabelText>Nova Senha</FormControlLabelText>
+          <FormControlLabelText>Nova Senha</FormControlLabelText>
         </FormControlLabel>
         <Input>
-          <InputField
-            type="password"
-          />
+          <InputField type="password" />
         </Input>
         <FormControlHelper>
           <FormControlHelperText>
@@ -71,12 +69,10 @@ export default function Password() {
         isRequired={false}
       >
         <FormControlLabel mb="$1">
-        <FormControlLabelText>Confirme sua senha</FormControlLabelText>
+          <FormControlLabelText>Confirme sua senha</FormControlLabelText>
         </FormControlLabel>
         <Input>
-          <InputField
-            type="password"
-          />
+          <InputField type="password" />
         </Input>
         <FormControlError>
           <FormControlErrorIcon as={AlertCircleIcon} />
