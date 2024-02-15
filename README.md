@@ -1,4 +1,6 @@
-# blueLIMS - Aplicação para Gerenciamento de Insumos de Laboratórios 🧪📱
+<h1 align="center">Projeto em desenvolvimento ⚠️</h1>
+
+## blueLIMS - Aplicação para Gerenciamento de Insumos de Laboratórios 🧪📱
 
 Bem-vindo ao repositório oficial do projeto de TCC em construção - **blueLIMS**. Este estudo busca desenvolver um sistema computadorizado em formato mobile, dedicado a simplificar a gestão e organização de laboratórios de química ou ciências. 
 Nosso objetivo geral é fornecer uma ferramenta intuitiva e visualmente amigável para professores e técnicos encarregados dessa importante tarefa. Este estudo está sendo desenvolvido no âmbito do Curso Superior de Tecnologia em Sistemas para Internet do **Instituto Federal de Brasília, Campus Brasília**.
