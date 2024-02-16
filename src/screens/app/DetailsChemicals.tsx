@@ -25,7 +25,7 @@ import { SelectBackdrop } from "@gluestack-ui/themed";
 import { SelectItem } from "@gluestack-ui/themed";
 import { ButtonIcon } from "@gluestack-ui/themed";
 
-export default function RegisterChemicals() {
+export default function DetailsChemicals() {
   return (
     <Screen title="Detalhes" canGoBack>
       <Box />

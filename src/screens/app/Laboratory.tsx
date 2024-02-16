@@ -15,7 +15,7 @@ import {
   InputField,
 } from "@gluestack-ui/themed";
 
-export default function Profile() {
+export default function Laboratory() {
   return (
     <Screen title="Laboratório" canGoBack>
       <Box />
