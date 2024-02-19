@@ -4,21 +4,29 @@ import { Feather } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 
 import Chemicals from "../screens/app/Chemicals";
-import Profile from "../screens/app/Profile";
 import RegisterChemicals from "../screens/app/RegisterChemicals";
 import About from "../screens/app/About";
-import Password from "../screens/app/Password";
-import DetailsChemicals from "../screens/app/DetailsChemicals";
-import Laboratory from "../screens/app/Laboratory";
-import SignIn from "../screens/SignIn";
+import SignIn from "../screens/auth/SignIn";
 
-const Tab = createBottomTabNavigator();
+
+export type AppTabBottomTabParamList = {
+  ChemicalsScreen: undefined;
+  RegisterChemicalsScreen: undefined;
+  AboutScreen: undefined;
+};
+
+const Tab = createBottomTabNavigator<AppTabBottomTabParamList>();
 
 export default function TabRoutes() {
   return (
-    <Tab.Navigator screenOptions={{ headerShown: false }}>
+    <Tab.Navigator 
+    screenOptions={{ 
+      headerShown: false,
+      tabBarActiveTintColor: '#e91e63',
+      }}
+      >
       <Tab.Screen
-        name="Chemicals"
+        name="ChemicalsScreen"
         component={Chemicals}
         options={{
           tabBarIcon: ({ color, size }) => (
@@ -29,7 +37,7 @@ export default function TabRoutes() {
       />
 
       <Tab.Screen
-        name="RegisterChemicals"
+        name="RegisterChemicalsScreen"
         component={RegisterChemicals}
         options={{
           tabBarIcon: ({ color, size }) => (
@@ -40,18 +48,7 @@ export default function TabRoutes() {
       />
 
       <Tab.Screen
-        name="SignIn"
-        component={SignIn}
-        options={{
-          tabBarIcon: ({ color, size }) => (
-            <AntDesign name="user" color={color} size={size} />
-          ),
-          tabBarLabel: "SignIn",
-        }}
-      />
-
-      <Tab.Screen
-        name="About"
+        name="AboutScreen"
         component={About}
         options={{
           tabBarIcon: ({ color, size }) => (

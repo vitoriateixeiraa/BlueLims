@@ -1,12 +1,14 @@
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer } from "@react-navigation/native";
 
-import TabRoutes from './tab.routes';
+import { AuthStack } from "./auth.stack";
+import { AppStack } from "./app.stack";
 
 export default function Routes() {
-    return (
-        <NavigationContainer>
-            <TabRoutes/>
-            
-        </NavigationContainer>
-    )
+  const isAuthenticated = true;
+
+  return (
+    <NavigationContainer>
+      {isAuthenticated ? <AppStack /> : <AuthStack />}
+    </NavigationContainer>
+  );
 }

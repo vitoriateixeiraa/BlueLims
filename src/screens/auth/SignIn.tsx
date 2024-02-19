@@ -6,8 +6,8 @@ import {
   ScrollView,
   KeyboardAvoidingView,
 } from "react-native";
-import { Logo } from "../components/Logo";
-import { Screen } from "../components/Screen";
+import { Logo } from "../../components/Logo";
+import { Screen } from "../../components/Screen";
 import {
   AddIcon,
   Box,
