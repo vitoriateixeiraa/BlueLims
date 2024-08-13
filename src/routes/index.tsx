@@ -1,14 +1,25 @@
-import { NavigationContainer } from "@react-navigation/native";
+import React from 'react';
 
-import { AuthStack } from "./auth.stack";
-import { AppStack } from "./app.stack";
+import { NavigationContainer } from '@react-navigation/native';
+import { AppStack } from './app.stack';
+import AuthStack from './auth.stack';
+import { useAuth } from '../context/auth/authProvider';
+import { Box, Spinner } from '@gluestack-ui/themed';
 
-export default function Routes() {
-  const isAuthenticated = true;
+export function Routes() {
+  const { isLoading, authCredentials } = useAuth();
+
+  if (isLoading) {
+    return (
+      <Box flex={1} justifyContent="center" alignItems="center">
+        <Spinner size="large" color={'#fff'} />
+      </Box>
+    );
+  }
 
   return (
     <NavigationContainer>
-      {isAuthenticated ? <AppStack /> : <AuthStack />}
+      {authCredentials ? <AppStack /> : <AuthStack />}
     </NavigationContainer>
   );
 }
